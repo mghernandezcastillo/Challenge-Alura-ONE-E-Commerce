@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "category": "star wars",
+    "image": "../assets/images/starwars/starwars1.svg",
+    "title": "Producto XYZ",
+    "price": "$ 60,00"
+  },
+  {
+    "id": "2",
+    "category": "star wars",
+    "image": "../assets/images/starwars/starwars2.svg",
+    "title": "Producto XYZ",
+    "price": "$ 60,00"
+  },
+  {
+    "id": "3",
+    "category": "star wars",
+    "image": "../assets/images/starwars/starwars3.svg",
+    "title": "Producto XYZ",
+    "price": "$ 60,00"
+  },
+  {
+    "id": "4",
+    "category": "star wars",
+    "image": "../assets/images/starwars/starwars4.svg",
+    "title": "Producto XYZ",
+    "price": "$ 60,00"
+  },
+  {
+    "id": "5",
+    "category": "star wars",
+    "image": "../assets/images/starwars/starwars5.svg",
+    "title": "Producto XYZ",
+    "price": "$ 60,00"
+  },
+  {
+    "id": "6",
+    "category": "star wars",
+    "image": "../assets/images/starwars/starwars6.svg",
+    "title": "Producto XYZ",
+    "price": "$ 60,00"
+  }
+]

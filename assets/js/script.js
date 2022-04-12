@@ -1,19 +1,19 @@
-const check = document.getElementById("check");
-const searchIcon = document.querySelector(".header__icon");
-const search = document.querySelector(".header__search");
-const nav = document.querySelector(".header__nav");
+// creating products
 
-// all the li elements in the mobile menu
-const mobilemenuItems = document.querySelectorAll("#menu li");
+const starWarsSection = document.querySelector("#star-wars");
 
-mobilemenuItems.forEach(function (item) {
-  item.addEventListener("click", function () {
-    check.checked = !check.checked;
-  });
-});
+const requestURL = ".../../assets/data/productsData.json";
+const request = new XMLHttpRequest();
+request.open("GET", requestURL);
+request.responseType = "json";
+request.send();
+request.onload = function () {
+  const products = request.response;
 
-searchIcon.addEventListener("click", function () {
-  searchIcon.classList.toggle("header__icon--hidden");
-  nav.classList.toggle("header__nave--displayinherit");
-  search.classList.toggle("header__search--show");
-});
+  // create products
+  for (let i = 0; i < products.length; i++) {
+    const product = products[i];
+    console.log(product.price);
+    createProductItem(product, starWarsSection);
+  }
+};
