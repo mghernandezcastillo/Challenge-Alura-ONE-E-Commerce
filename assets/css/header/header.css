@@ -1,0 +1,12 @@
+.header__nav {
+  display: flex;
+  background: var(--page-header-bgColor);
+  border-bottom: 1px solid red;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+}
+
+.header__nave--displayinherit {
+  display: inherit;
+}
