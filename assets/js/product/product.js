@@ -9,7 +9,7 @@ function createProductItem(product, section) {
   let productImage = document.createElement("article");
   let productImg = document.createElement("img");
   productImg.classList.add("product__image");
-  productImg.src = product.image;
+  productImg.src = product.image.toString();
   productImg.alt = product.title;
 
   // append imagen
