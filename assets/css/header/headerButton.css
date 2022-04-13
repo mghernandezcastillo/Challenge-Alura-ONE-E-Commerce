@@ -1,13 +1,11 @@
 .header__button {
-  margin-left: auto;
+  margin-left: 19px;
   margin-right: 19px;
-  width: 182px;
-  height: 51px;
 }
 
 .header__button button {
-  width: 100%;
-  height: 100%;
+  width: 182px;
+  height: 51px;
   font-size: 1.5rem;
   background: none;
   color: var(--page-header-button-txtColor);
@@ -16,7 +14,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .header__button {
+  .header__button button {
     width: 133px;
     height: 40px;
   }
