@@ -43,6 +43,7 @@ async function getProductsData() {
       if (window.innerWidth > 768) {
         displayProductsByCategory(products, starWarsSection, "star wars", 6);
         displayProductsByCategory(products, consolasSection, "consolas", 6);
+        displayProductsByCategory(products, diversosSection, "diversos", 6);
       }
     }
   };
