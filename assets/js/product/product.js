@@ -1,10 +1,14 @@
 // CREATE PRODUCT
 
 function createProductItem(product, section) {
+  // create product item
+  const productItem = document.createElement("div");
+  productItem.classList.add("product__item");
+
   // imagen
   let productImage = document.createElement("article");
-  productImage.classList.add("product__image");
   let productImg = document.createElement("img");
+  productImg.classList.add("product__image");
   productImg.src = product.image;
   productImg.alt = product.title;
 
@@ -13,32 +17,36 @@ function createProductItem(product, section) {
 
   // titulo
   let productTitle = document.createElement("article");
-  productTitle.classList.add("product__title");
   let productTitleText = document.createElement("h2");
+  productTitleText.classList.add("product__title");
+
   productTitleText.innerText = product.title;
   // append titulo
   productTitle.appendChild(productTitleText);
 
   // precio
   let productPrice = document.createElement("article");
-  productPrice.classList.add("product__price");
   let productPriceText = document.createElement("span");
+  productPriceText.classList.add("product__price");
   productPriceText.innerText = product.price;
   // append precio
   productPrice.appendChild(productPriceText);
 
   // botón
-  let productButton = document.createElement("article");
-  productButton.classList.add("product__button");
-  let productButtonText = document.createElement("a");
-  productButtonText.innerText = "Ver producto";
-  productButtonText.href = `/components/products/product${product.id}.html`;
+  let productLink = document.createElement("article");
+  let productLinkText = document.createElement("a");
+  productLinkText.classList.add("product__link");
+  productLinkText.innerText = "Ver producto";
+  productLinkText.href = `/components/products/product${product.id}.html`;
   // append boton
-  productButton.appendChild(productButtonText);
+  productLink.appendChild(productLinkText);
+
+  // append to product item
+  productItem.appendChild(productImage);
+  productItem.appendChild(productTitle);
+  productItem.appendChild(productPrice);
+  productItem.appendChild(productLink);
 
   // append to section
-  section.appendChild(productImage);
-  section.appendChild(productTitle);
-  section.appendChild(productPrice);
-  section.appendChild(productButton);
+  section.appendChild(productItem);
 }

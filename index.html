@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="assets/css/header/headerLogo.css" />
     <link rel="stylesheet" href="assets/css/header/header.css" />
     <link rel="stylesheet" href="assets/css/banner/banner.css" />
+    <link rel="stylesheet" href="assets/css/products/productsHeader.css" />
+    <link rel="stylesheet" href="assets/css/products/productsCategory.css" />
+    <link rel="stylesheet" href="assets/css/products/productsItem.css" />
 
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -109,13 +112,46 @@
     <main class="main">
       <section class="products">
         <!-- STAR WARS -->
-        <div class="star-wars" id="star-wars">
+        <div class="products__item">
           <div class="products__header">
             <h2 class="products__title">Star Wars</h2>
-            <a class="products__link" href="#">Ver todo</a>
+
+            <a class="products__link" href="#"
+              >Ver todo
+              <li class="products__icon fas fa-arrow-right"></li>
+            </a>
           </div>
+          <div class="products__category" id="star-wars"></div>
+        </div>
+
+        <!-- CONSOLAS-->
+        <div class="products__item">
+          <div class="products__header">
+            <h2 class="products__title">Consolas</h2>
+
+            <a class="products__link" href="#"
+              >Ver todo
+              <li class="products__icon fas fa-arrow-right"></li>
+            </a>
+          </div>
+          <div class="products__category" id="consolas"></div>
         </div>
       </section>
+
+      <!-- DIVERSOS -->
+      <section class="products">
+        <!-- STAR WARS -->
+        <div class="products__item">
+          <div class="products__header">
+            <h2 class="products__title">Diversos</h2>
+
+            <a class="products__link" href="#"
+              >Ver todo
+              <li class="products__icon fas fa-arrow-right"></li>
+            </a>
+          </div>
+          <div class="products__category" id="diversos"></div>
+        </div>
     </main>
 
     <script src="assets/js/mobileMenu/mobileMenu.js"></script>
