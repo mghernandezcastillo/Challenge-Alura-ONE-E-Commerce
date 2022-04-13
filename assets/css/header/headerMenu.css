@@ -24,7 +24,7 @@
   margin-right: 10px;
   cursor: pointer;
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 20;
 }
 
