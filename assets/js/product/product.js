@@ -1,52 +1,37 @@
-// CREATE PRODUCT
+const productSection = document.querySelector(".product");
 
-function createProductItem(product, section) {
-  // create product item
-  const productItem = document.createElement("div");
-  productItem.classList.add("product__item");
-
-  // imagen
-  let productImage = document.createElement("article");
-  let productImg = document.createElement("img");
-  productImg.classList.add("product__image");
-  productImg.src = product.image.toString();
-  productImg.alt = product.title;
-
-  // append imagen
-  productImage.appendChild(productImg);
-
-  // titulo
-  let productTitle = document.createElement("article");
-  let productTitleText = document.createElement("h2");
-  productTitleText.classList.add("product__title");
-
-  productTitleText.innerText = product.title;
-  // append titulo
-  productTitle.appendChild(productTitleText);
-
-  // precio
-  let productPrice = document.createElement("article");
-  let productPriceText = document.createElement("span");
-  productPriceText.classList.add("product__price");
-  productPriceText.innerText = product.price;
-  // append precio
-  productPrice.appendChild(productPriceText);
-
-  // botón
-  let productLink = document.createElement("article");
-  let productLinkText = document.createElement("a");
-  productLinkText.classList.add("product__link");
-  productLinkText.innerText = "Ver producto";
-  productLinkText.href = `/components/products/product${product.id}.html`;
-  // append boton
-  productLink.appendChild(productLinkText);
-
-  // append to product item
-  productItem.appendChild(productImage);
-  productItem.appendChild(productTitle);
-  productItem.appendChild(productPrice);
-  productItem.appendChild(productLink);
-
-  // append to section
-  section.appendChild(productItem);
+function getProductId() {
+  if (localStorage.getItem("productId") === null) {
+    const urlParams = new URLSearchParams(window.location.search);
+    localStorage.setItem("productId", urlParams.get("id"));
+    const productId = localStorage.getItem("productId");
+    return productId;
+  } else {
+    const productId = localStorage.getItem("productId");
+    return productId;
+  }
 }
+
+async function getProductsData() {
+  const Http = new XMLHttpRequest();
+  const url = "../data/productsData.json";
+  Http.open("GET", url);
+  Http.send();
+  Http.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      const data = JSON.parse(Http.responseText);
+      const products = data;
+
+      if (window.innerWidth <= 768) {
+        displayProductData(products, getProductId(), productSection);
+      }
+
+      // for desktop devices
+      if (window.innerWidth > 768) {
+        displayProductData(products, getProductId(), productSection);
+      }
+    }
+  };
+}
+
+getProductsData();

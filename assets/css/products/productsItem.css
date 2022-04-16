@@ -11,6 +11,13 @@
   cursor: pointer;
 }
 
+.product__image {
+  width: 176px;
+  height: 174px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .product__title {
   font-size: 14px;
   font-weight: 500;
@@ -38,6 +45,12 @@
     gap: 8px;
     width: calc(50% - 16px);
   }
+  .product__image {
+    width: 156px;
+    height: 174px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 /* tablet */
@@ -45,5 +58,11 @@
   .product__item {
     gap: 8px;
     width: auto;
+  }
+  .product__image {
+    width: 164px;
+    height: 174px;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }

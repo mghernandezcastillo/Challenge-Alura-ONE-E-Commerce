@@ -38,69 +38,7 @@
   </head>
   <body>
     <!-- SECCION HEADER -->
-    <header class="header">
-      <nav class="header__nav">
-        <!-- Logo-->
-        <div class="header__logo">
-          <a href="#" class="header__image">
-            <img src="assets/images/Logo.png" alt="logo" />
-          </a>
-        </div>
-
-        <!-- Buscador -->
-        <div class="header__search">
-          <form class="header__form">
-            <input
-              class="header__input"
-              type="search"
-              placeholder="¿Qué deseas buscar?"
-              id="input_search"
-              v-model="defaultInputSearch"
-              v-on:input="filterBySearch"
-            />
-            <button
-              type="submit"
-              aria-label="submit form"
-              class="header__submit"
-            >
-              <li class="fas fa-search"></li>
-            </button>
-          </form>
-        </div>
-
-        <!-- Botón Login -->
-        <div class="header__button">
-          <button class="header__button--login">Login</button>
-        </div>
-
-        <!-- Buscador vista movil -->
-        <div class="header__icon">
-          <li class="fas fa-search"></li>
-        </div>
-
-        <!-- Icono Menu mobil -->
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="header__menuicon fas fa-bars"></i>
-        </label>
-
-        <!-- Menu -->
-        <ul class="header__menu" id="menu">
-          <li class="header__item">
-            <a class="header__link active" href="#">Inicio</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Nosotros</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Portafolio</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <header class="header"></header>
 
     <!-- banner image Hero -->
     <section class="banner">
@@ -154,70 +92,18 @@
           <div class="products__category" id="diversos"></div>
         </div>
       </section>
-      <!-- SECCION FOOTER -->
-      <footer class="footer">
-        <!-- LOGO -->
-        <div class="footer__logo">
-          <a href="#" class="footer__image">
-            <img src="assets/images/Logo.png" alt="logo" />
-          </a>
-        </div>
-
-        <!-- MENU -->
-        <div class="footer__menu">
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="footer__link" href="#">Quienes somos</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Politica de privacidad</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Programa de fidelidad</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Nuestras Tiendas</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Quiero ser franquiciado</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Anuncie aquí</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- CONTACT FORM -->
-        <div class="footer__contact">
-          <h2 class="footer__title">Hable con nosotros</h2>
-          <form class="footer__form">
-            <input
-              class="footer__input"
-              type="text"
-              placeholder="Escribe tu nombre"
-              id="input_name"
-            />
-            <textarea
-              class="footer__textarea"
-              placeholder="Escribe tu mensaje"
-              id="input_message"
-            ></textarea>
-            <button type="submit" class="footer__submit">Enviar mensaje</button>
-          </form>
-        </div>
-      </footer>
-      <!-- COPYRIGHT -->
-      <section class="copyright">
-        <p class="copyright__text">
-          Desarrollado por Michael Hernández<br />
-          2022
-        </p>
-      </section>
     </main>
-
-    <script src="assets/js/mobileMenu/mobileMenu.js?16"></script>
-    <script src="assets/js/header/headerSearch.js?16"></script>
-    <script src="assets/js/product/product.js?16"></script>
-    <script src="assets/js/script.js?16"></script>
+    <!-- SECCION FOOTER -->
+    <footer class="footer"></footer>
+    <!-- COPYRIGHT -->
+    <section class="copyright"></section>
+    <script src="assets/js/header/header.js"></script>
+    <script src="assets/js/mobileMenu/mobileMenu.js?18"></script>
+    <script src="assets/js/header/headerSearch.js?18"></script>
+    <script src="assets/js/service.js"></script>
+    <script src="assets/js/home/home.js"></script>
+    <script src="assets/js/footer/footer.js"></script>
+    <script src="assets/js/copyright/copyright.js"></script>
+    <script src="assets/js/script.js?18"></script>
   </body>
 </html>
