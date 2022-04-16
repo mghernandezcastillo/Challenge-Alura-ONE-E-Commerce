@@ -12,6 +12,12 @@ function getProductId() {
   }
 }
 
+function getProductCategory(products, productId) {
+  const product = products.find((product) => product.id == productId);
+  const productCategory = product.category;
+  return productCategory;
+}
+
 async function getProductsData() {
   const Http = new XMLHttpRequest();
   const url = "assets/data/productsData.json";
