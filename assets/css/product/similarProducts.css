@@ -38,3 +38,31 @@
   font-weight: 700;
   color: var(--page-products-linkColor);
 }
+
+/* mobile */
+@media (max-width: 768px) {
+  .similar-products {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .similar-products .product__image {
+    width: 156px;
+    height: 174px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .similar-products {
+    justify-content: none;
+  }
+
+  .similar-products .product__image {
+    width: 164px;
+    height: 174px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
