@@ -14,7 +14,7 @@ function getProductId() {
 
 async function getProductsData() {
   const Http = new XMLHttpRequest();
-  const url = "../data/productsData.json";
+  const url = "assets/data/productsData.json";
   Http.open("GET", url);
   Http.send();
   Http.onreadystatechange = function () {

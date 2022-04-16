@@ -16,7 +16,7 @@ function createHeader(section) {
 
   //create logo image
   let logoImage = document.createElement("img");
-  logoImage.src = "/assets/images/Logo.png";
+  logoImage.src = "assets/images/Logo.png";
   logoImage.alt = "logo";
 
   // append logo image to logo link

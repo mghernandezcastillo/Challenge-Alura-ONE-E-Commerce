@@ -8,7 +8,7 @@ function createListProductsItem(product, section) {
   // create product image link
   const productImageLink = document.createElement("a");
   productImageLink.classList.add("product__image-link");
-  productImageLink.href = `/assets/html/product.html?id=${product.id}`;
+  productImageLink.href = `assets/html/product.html?id=${product.id}`;
 
   // imagen
   let productImage = document.createElement("article");
@@ -52,7 +52,7 @@ function createListProductsItem(product, section) {
   let productLinkText = document.createElement("a");
   productLinkText.classList.add("product__link");
   productLinkText.innerText = "Ver producto";
-  productLinkText.href = `/assets/html/product.html?id=${product.id}`;
+  productLinkText.href = `/product.html?id=${product.id}`;
   // append boton
   productLink.appendChild(productLinkText);
 
@@ -77,7 +77,7 @@ function createProductDataItem(product, section) {
   // create product image
   let productImage = document.createElement("div");
   productImage.classList.add("product__image");
-  productImage.style.backgroundImage = `url(${product.image})`;
+  productImage.style.backgroundImage = `url(/${product.image})`;
 
   // append product image
   productImageContainer.appendChild(productImage);
