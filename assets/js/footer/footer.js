@@ -9,7 +9,7 @@ function createFooter(section) {
 
   // create logo image
   let footerLogoImg = document.createElement("img");
-  footerLogoImg.src = "/assets/images/Logo.png";
+  footerLogoImg.src = "assets/images/Logo.png";
   footerLogoImg.alt = "logo";
 
   // append logo image
