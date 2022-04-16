@@ -12,6 +12,7 @@ function createHeader(section) {
   //create logo link
   let logoLink = document.createElement("a");
   logoLink.classList.add("header__image");
+  logoLink.href = "/";
 
   //create logo image
   let logoImage = document.createElement("img");

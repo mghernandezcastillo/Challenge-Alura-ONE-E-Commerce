@@ -21,9 +21,11 @@
   --page-footer-linkColor: #464646;
   --page-footer-button-bgColor: #2a7ae4;
   --page-footer-button-txtColor: #ffffff;
+  --page-product-bgColor: #e5e5e5;
   --page-product-titleColor: #464646;
-  --page-product-descriptionColor: #464646;
   --page-product-priceColor: #000000;
+  --page-product-descriptionColor: #464646;
+
   --white: #fff;
   --black: #333;
   --blue: #00b9eb;

@@ -1,9 +1,14 @@
 // CREATE PRODUCT
 
-function createProductItem(product, section) {
+function createListProductsItem(product, section) {
   // create product item
   const productItem = document.createElement("div");
   productItem.classList.add("product__item");
+
+  // create product image link
+  const productImageLink = document.createElement("a");
+  productImageLink.classList.add("product__image-link");
+  productImageLink.href = `/assets/html/product.html?id=${product.id}`;
 
   // imagen
   let productImage = document.createElement("article");
@@ -13,6 +18,9 @@ function createProductItem(product, section) {
 
   // append imagen
   productImage.appendChild(productImg);
+
+  // append image link
+  productImageLink.appendChild(productImage);
 
   // titulo
   let productTitle = document.createElement("article");
@@ -49,7 +57,7 @@ function createProductItem(product, section) {
   productLink.appendChild(productLinkText);
 
   // append to product item
-  productItem.appendChild(productImage);
+  productItem.appendChild(productImageLink);
   productItem.appendChild(productTitle);
   productItem.appendChild(productPrice);
   productItem.appendChild(productLink);
@@ -61,10 +69,52 @@ function createProductItem(product, section) {
   section.appendChild(productItem);
 }
 
+function createProductDataItem(product, section) {
+  // create product image container
+  let productImageContainer = document.createElement("div");
+  productImageContainer.classList.add("product__image-container");
+
+  // create product image
+  let productImage = document.createElement("div");
+  productImage.classList.add("product__image");
+  productImage.style.backgroundImage = `url(${product.image})`;
+
+  // append product image
+  productImageContainer.appendChild(productImage);
+
+  // create product data container
+  let productDataContainer = document.createElement("div");
+  productDataContainer.classList.add("product__data-container");
+
+  // create product title
+  let productTitle = document.createElement("h2");
+  productTitle.classList.add("product__title");
+  productTitle.innerText = product.title;
+
+  // create product price
+  let productPrice = document.createElement("span");
+  productPrice.classList.add("product__price");
+  productPrice.innerText = product.price;
+
+  // create product description
+  let productDescription = document.createElement("p");
+  productDescription.classList.add("product__description");
+  productDescription.innerText = product.description;
+
+  // append product data container
+  productDataContainer.appendChild(productTitle);
+  productDataContainer.appendChild(productPrice);
+  productDataContainer.appendChild(productDescription);
+
+  // appen image and data containers to section
+  section.appendChild(productImageContainer);
+  section.appendChild(productDataContainer);
+}
+
 function displayAllProducts(products, section, limit = products.length) {
   for (let i = 0; i < products.lenght; i++) {
     const product = products[i];
-    createProductItem(product, section);
+    createListProductsItem(product, section);
   }
 }
 
@@ -74,7 +124,7 @@ function displayProductsByCategory(products, section, category, limit) {
   for (let i = 0; i < limit; i++) {
     const product = products[i];
     if (product.category === category) {
-      createProductItem(product, section);
+      createListProductsItem(product, section);
     }
   }
 }
@@ -82,5 +132,5 @@ function displayProductsByCategory(products, section, category, limit) {
 function displayProductData(products, productId, section) {
   let productData = products.filter((product) => product.id === productId);
   console.log(productData);
-  createProductItem(productData[0], section);
+  createProductDataItem(productData[0], section);
 }

@@ -40,6 +40,7 @@
   font-size: 1.5rem;
 }
 
+/* para mobiles */
 @media only screen and (max-width: 768px) {
   .header__search {
     display: none;
@@ -54,5 +55,16 @@
 
   .header__icon--hidden {
     display: none;
+  }
+}
+
+/* Para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header__search {
+    display: inherit;
+  }
+
+  .header__input {
+    width: 272px;
   }
 }
