@@ -52,7 +52,6 @@
     width: calc(50% - 16px);
   }
   .product__image {
-    width: 156px;
     height: 174px;
     background-size: cover;
     background-repeat: no-repeat;
