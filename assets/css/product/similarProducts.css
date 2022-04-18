@@ -49,6 +49,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  .similar-products::after {
+    content: inherit;
+    flex: inherit;
+  }
   .similar-products .product__image {
     width: 156px;
     height: 174px;
@@ -62,6 +67,11 @@
   .similar-products {
     flex-wrap: wrap;
     justify-content: none;
+  }
+
+  .similar-products::after {
+    content: inherit;
+    flex: inherit;
   }
 
   .similar-products .product__image {
