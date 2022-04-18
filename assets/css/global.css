@@ -30,6 +30,18 @@
   --page-logIn-placeholderColor: #a2a2a2;
   --page-login-button-bgColor: #2a7ae4;
   --page-login-button-txtColor: #ffffff;
+  --page-createProduct-bgColor: #e5e5e5;
+  --page-createProduct-dropBox-bgColor: #ffffff33;
+  --page-createProduct-dropBox-textColor: #6b6b6b;
+  --page-createProduct-dropBox-borderColor: #c8c8c8;
+  --page-createProduct-dropBox-iconColor: #c8c8c8;
+  --page-createProduct-buttonFile-borderColor: #2a7ae4;
+  --page-createProduct-buttonFile-textColor: #2a7ae4;
+  --page-createProduct-input-bgColor: #ffffff;
+  --page-createProduct-input-textColor: #464646;
+  --page-createProduct-input-placeHolderColor: #a2a2a2;
+  --page-createProduct-button-bgColor: #2a7ae4;
+  --page-createProduct-button-txtColor: #ffffff;
   --white: #fff;
   --black: #333;
   --blue: #00b9eb;
