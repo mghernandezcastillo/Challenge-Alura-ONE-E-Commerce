@@ -3,7 +3,7 @@
   margin-right: 19px;
 }
 
-.header__button button {
+.header__button input {
   width: 182px;
   height: 51px;
   font-size: 1.5rem;
@@ -14,7 +14,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .header__button button {
+  .header__button input {
     width: 133px;
     height: 40px;
   }

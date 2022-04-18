@@ -65,10 +65,15 @@ function createHeader(section) {
   let loginContainer = document.createElement("div");
   loginContainer.classList.add("header__button");
 
-  // create login button
-  let loginButton = document.createElement("button");
+  // create login input
+  let loginButton = document.createElement("input");
+  loginButton.setAttribute("type", "button");
+  loginButton.setAttribute("value", "Login");
+  loginButton.setAttribute("id", "login_button");
   loginButton.classList.add("header__button--login");
-  loginButton.innerHTML = "Login";
+  loginButton.onclick = function () {
+    window.location.href = "login.html";
+  };
 
   // append login button to login container
   loginContainer.appendChild(loginButton);
