@@ -72,12 +72,27 @@
 
 /* mobile */
 @media (max-width: 768px) {
+  .all-products .product__item {
+    margin-bottom: 16px;
+  }
+
   .all-products {
     justify-content: none;
-    gap: 0px;
+    gap: 16px;
     padding-left: 32px;
     padding-right: 32px;
   }
+
+  .all-products__title {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .all-products__subtitle {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
   .all-products .product__image {
     width: 140px;
     height: 174px;
