@@ -14,3 +14,8 @@ function drag() {
 function drop() {
   document.getElementById("uploadFile").parentNode.className = "dragBox";
 }
+
+// add EventListener
+document.getElementById("uploadFile").addEventListener("change", dragNdrop);
+document.getElementById("uploadFile").addEventListener("dragover", drag);
+document.getElementById("uploadFile").addEventListener("drop", drop);
