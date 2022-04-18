@@ -72,7 +72,7 @@ function createHeader(section) {
   loginButton.setAttribute("id", "login_button");
   loginButton.classList.add("header__button--login");
   loginButton.onclick = function () {
-    window.location.href = "login.html";
+    window.location.href = "logIn.html";
   };
 
   // append login button to login container
