@@ -25,7 +25,11 @@
   --page-product-titleColor: #464646;
   --page-product-priceColor: #000000;
   --page-product-descriptionColor: #464646;
-
+  --page-login-bgcolor: #e5e5e5;
+  --page-logIn-titleColor: #464646;
+  --page-logIn-placeholderColor: #a2a2a2;
+  --page-login-button-bgColor: #2a7ae4;
+  --page-login-button-txtColor: #ffffff;
   --white: #fff;
   --black: #333;
   --blue: #00b9eb;
