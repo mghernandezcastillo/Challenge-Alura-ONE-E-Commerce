@@ -93,6 +93,8 @@ function createFooter(section) {
   footerContactInput.setAttribute("type", "text");
   footerContactInput.setAttribute("placeholder", "Escribe tu nombre");
   footerContactInput.setAttribute("id", "input_name");
+  footerContactInput.setAttribute("name", "name");
+  footerContactInput.setAttribute("required", "required");
 
   // append input to form
   footerContactForm.appendChild(footerContactInput);
@@ -102,6 +104,8 @@ function createFooter(section) {
   footerContactTextarea.classList.add("footer__textarea");
   footerContactTextarea.setAttribute("placeholder", "Escribe tu mensaje");
   footerContactTextarea.setAttribute("id", "input_message");
+  footerContactTextarea.setAttribute("name", "message");
+  footerContactTextarea.setAttribute("required", "required");
 
   //append input and textarea to form
   footerContactForm.appendChild(footerContactTextarea);

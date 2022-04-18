@@ -119,12 +119,8 @@ function createHeader(section) {
       link: "index.html",
     },
     {
-      name: "Nosotros",
-      link: "about.html",
-    },
-    {
-      name: "Portafolio",
-      link: "products.html",
+      name: "Productos",
+      link: "allProducts.html?category=all",
     },
     {
       name: "Contacto",

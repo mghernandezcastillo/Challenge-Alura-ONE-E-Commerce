@@ -62,7 +62,7 @@ input[type="file"] {
   text-align: center;
 }
 .preview img {
-  max-width: 10%;
+  width: 100px;
 }
 
 /* mobile */

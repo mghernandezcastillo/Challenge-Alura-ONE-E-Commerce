@@ -25,6 +25,8 @@
   --page-product-titleColor: #464646;
   --page-product-priceColor: #000000;
   --page-product-descriptionColor: #464646;
+  --page-product-button-bgColor: #2a7ae4;
+  --page-product-button-textColor: #ffffff;
   --page-login-bgcolor: #e5e5e5;
   --page-logIn-titleColor: #464646;
   --page-logIn-placeholderColor: #a2a2a2;
@@ -71,5 +73,14 @@ footer {
   section,
   footer {
     padding: 0 16px;
+  }
+}
+
+/* vista tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header,
+  section,
+  footer {
+    padding: 0 32px;
   }
 }
