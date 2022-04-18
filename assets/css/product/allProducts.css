@@ -1,43 +1,70 @@
-.similar-products {
+.all-products {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
   margin-bottom: 20px;
-  gap: 8px;
+  gap: 16px;
 }
-.similar-products::after {
+
+.all-products::after {
   content: "";
   flex: auto;
 }
 
-.similarProducts__title {
+.all-products__header {
+  width: 100%;
+  margin-bottom: 20px;
+  gap: 8px;
+}
+
+.all-products__title {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 1rem;
   color: var(--page-products-titleColor);
 }
 
-.similar-products .product__image {
+.all-products__subtitle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--page-products-titleColor);
+}
+
+.all-products__remove-filter {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--page-products-linkColor);
+  cursor: pointer;
+}
+
+.hide-filter {
+  display: none;
+}
+
+.all-products .product__image {
   width: 176px;
   height: 174px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.similar-products .product__title {
+.all-products .product__title {
   font-size: 14px;
   font-weight: 500;
   color: var(--page-products-titleColor);
 }
 
-.similar-products .product__price {
+.all-products .product__price {
   font-size: 16px;
   font-weight: 700;
   color: var(--page-products-priceColor);
 }
 
-.similar-products .product__link {
+.all-products .product__link {
   font-size: 16px;
   font-weight: 700;
   color: var(--page-products-linkColor);
@@ -45,12 +72,14 @@
 
 /* mobile */
 @media (max-width: 768px) {
-  .similar-products {
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .all-products {
+    justify-content: none;
+    gap: 0px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
-  .similar-products .product__image {
-    width: 156px;
+  .all-products .product__image {
+    width: 140px;
     height: 174px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -59,12 +88,14 @@
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .similar-products {
-    flex-wrap: wrap;
+  .all-products {
     justify-content: none;
+    gap: 8px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
-  .similar-products .product__image {
+  .all-products .product__image {
     width: 164px;
     height: 174px;
     background-size: cover;

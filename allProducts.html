@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="assets/css/header/headerMenu.css" />
     <link rel="stylesheet" href="assets/css/header/headerLogo.css" />
     <link rel="stylesheet" href="assets/css/header/header.css" />
-    <link rel="stylesheet" href="assets/css/product/product.css" />
-    <link rel="stylesheet" href="assets/css/product/similarProducts.css" />
+    <link rel="stylesheet" href="assets/css/product/allProducts.css" />
     <link rel="stylesheet" href="assets/css/footer/footer.css" />
     <link rel="stylesheet" href="assets/css/footer/footerLogo.css" />
     <link rel="stylesheet" href="assets/css/footer/footerMenu.css" />
@@ -30,21 +29,32 @@
   <body>
     <!-- SECCION HEADER -->
     <header class="header"></header>
-    <main class="product-main">
-      <!-- SECCION PRODUCT DESCRIPTION -->
-      <section class="product" id="product"></section>
-      <!-- SECCION SIMILAR PRODUCTS -->
-      <section class="similar-products-title">
-        <h2 class="similarProducts__title">Productos similares</h2>
+    <!-- All PRODUCTS -->
+    <main class="all-products-main">
+      <!-- SECCION ALL PRODUCTS HEADER-->
+      <section class="all-products__header">
+        <div class="all-products__title">
+          <h1>Todos los productos</h1>
+        </div>
+        <div class="all-products__subtitle">
+          <h4></h4>
+        </div>
+        <div class="all-products__remove-filter">
+          <a href="allProducts.html?category=all">
+            <i class="fas fa-times"></i>
+            <span>Quitar filtros</span>
+          </a>
+        </div>
       </section>
-      <section class="similar-products" id="similar-products"></section>
+      <!-- SECCION ALL PRODUCTS CONTENT-->
+      <section class="all-products" id="all-products"></section>
     </main>
     <footer class="footer"></footer>
     <section class="copyright"></section>
 
     <script src="assets/js/service.js?36"></script>
-    <script src="assets/js/product/product.js?36"></script>
-    <script src="assets/js/product/similarProducts.js?36"></script>
+    <script src="assets/js/common/common.js?36"></script>
+    <script src="assets/js/product/allProducts.js?36"></script>
     <script src="assets/js/header/header.js?36"></script>
     <script src="assets/js/mobileMenu/mobileMenu.js?36"></script>
     <script src="assets/js/header/headerSearch.js?36"></script>

@@ -112,7 +112,7 @@ function createProductDataItem(product, section) {
 }
 
 function displayAllProducts(products, section, limit = products.length) {
-  for (let i = 0; i < products.lenght; i++) {
+  for (let i = 0; i < limit; i++) {
     const product = products[i];
     createListProductsItem(product, section);
   }
@@ -131,6 +131,5 @@ function displayProductsByCategory(products, section, category, limit) {
 
 function displayProductData(products, productId, section) {
   let productData = products.filter((product) => product.id === productId);
-  console.log(productData);
   createProductDataItem(productData[0], section);
 }
