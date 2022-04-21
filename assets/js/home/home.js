@@ -34,3 +34,9 @@ async function getProductsData() {
 localStorage.clear();
 
 getProductsData();
+
+const banner__button = document.querySelector(".banner__button");
+
+banner__button.onclick = function () {
+  window.location.href = "allProducts.html?category=consolas";
+};

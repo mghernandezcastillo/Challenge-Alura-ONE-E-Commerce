@@ -124,7 +124,7 @@ function createHeader(section) {
     },
     {
       name: "Contacto",
-      link: "contact.html",
+      link: "#footer",
     },
   ];
 
