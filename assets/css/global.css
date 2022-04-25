@@ -57,6 +57,25 @@
   --product-titleColor: #464646;
   --product-priceColor: #464646;
   --product-descriptionColor: #464646;
+  --warning-color: #df2525;
+}
+
+.item--invalid input {
+  border: 1px solid var(--warning-color) !important;
+}
+.item--invalid textarea {
+  border: 1px solid var(--warning-color) !important;
+}
+
+.input-message-error {
+  display: none;
+}
+
+.item--invalid .input-message-error {
+  display: block;
+  color: var(--warning-color);
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 header,
